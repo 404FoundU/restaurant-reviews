@@ -10,7 +10,6 @@ export default class ReviewsController {
                 _id: req.body.user_id
             }
             const date = new Date()
-
             const ReviewResponse = await ReviewsDAO.addReview(
                 restaurantId,
                 userInfo,
