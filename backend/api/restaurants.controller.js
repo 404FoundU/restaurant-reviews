@@ -18,7 +18,7 @@ export default class RestaurantsController {
             totalNumRestaurants
         } = await RestaurantsDAO.getRestaurants({filters, page, restaurantsPerPage});
         let response = {
-            restaurants: restaurantsList,
+            restaurants: restaurantList,
             page: page,
             filters: filters,
             entries_per_page: restaurantsPerPage,
