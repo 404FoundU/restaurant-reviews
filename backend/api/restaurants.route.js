@@ -6,6 +6,5 @@ const router = express.Router();
 /*router.get("/", (req, res) => {
     res.send("hello");
 })*/
-router.get("/", RestaurantsCtrl.apiGetRestaurants)
-
+router.route("/").get(RestaurantsCtrl.apiGetRestaurants)
 export default router;
